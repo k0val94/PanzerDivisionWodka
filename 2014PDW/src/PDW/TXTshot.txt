@@ -1,0 +1,113 @@
+if((!downschuss)&&(!leftschuss)&&(!rightschuss)&&(uphilf)){   
+			if ((up) || (uphilf) && (helpifschuss)){
+			
+			upschuss = true;
+			downschuss = false;
+			leftschuss = false;
+			rightschuss = false;
+			if (upschuss){
+				schussy = schussy - schussspeed;
+			}
+			
+			
+			if (schussy <= 20){
+			   helpifschuss = false;
+			   upschuss = false;
+			   
+			}
+		}
+			
+		}
+		if ((upschuss)&&((downhilf)||(righthilf)||(lefthilf))){
+			schussy = schussy - schussspeed;
+			if (schussy <= 20){
+				   helpifschuss = false;
+				   upschuss = false;
+			}	
+		}
+		///////////////////downschuss
+			
+		 if((!upschuss)&&(!leftschuss)&&(!rightschuss)&&(downhilf)){//
+			if ((down) || (downhilf) && (helpifschuss)){
+				downschuss = true;
+				upschuss = false;
+				leftschuss = false;
+				rightschuss = false;
+				if(downschuss){
+				schussy = schussy + schussspeed;	
+				}
+				
+				
+				
+				if (schussy >= 832){
+				   helpifschuss = false;
+				   downschuss = false;
+				}	
+      
+		 }
+		}
+		if ((downschuss)&&((uphilf)||(righthilf)||(lefthilf))){
+			schussy = schussy + schussspeed;
+			if (schussy >= 832){
+				   helpifschuss = false;
+				   downschuss = false;
+				}	
+		}
+	///////////rightschuss	
+		
+	
+		 if((!downschuss)&&(!leftschuss)&&(!upschuss)&&(righthilf)){//	
+	if ((right) || (righthilf) && (helpifschuss)){
+				rightschuss = true;
+				downschuss = false;
+				leftschuss = false;
+				upschuss = false;
+				if(rightschuss){
+					schussx = schussx + schussspeed;
+				}
+				
+				
+				if (schussx >= 832){
+				   helpifschuss = false;
+				   rightschuss = false;
+				}	
+      
+		 }
+	
+	}
+	
+	if ((rightschuss)&&((downhilf)||(uphilf)||(lefthilf))){
+		schussx = schussx + schussspeed;
+		if (schussx >= 832){
+			   helpifschuss = false;
+			   rightschuss = false;
+		}		
+	}	
+	/////////////////////leftschuss
+	
+	 if((!downschuss)&&(!upschuss)&&(!rightschuss)&&(lefthilf)){//
+	if ((left) || (lefthilf) && (helpifschuss)){
+		leftschuss = true;
+		downschuss = false;
+		upschuss = false;
+		rightschuss = false;
+		if(leftschuss){
+			schussx = schussx - schussspeed;
+		}
+		
+		
+		if (schussx <= 0){
+		   helpifschuss = false;
+		   leftschuss = false;
+		}	 
+
+      }
+	}
+	
+	if ((leftschuss)&&((downhilf)||(uphilf)||(righthilf))){
+		schussx = schussx - schussspeed;
+		if (schussx <= 0){
+			   helpifschuss = false;
+			   leftschuss = false;
+			}		
+	}	
